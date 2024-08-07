@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Anjali's Portfolio</title>
     <style>
         body, html {
             margin: 0;
@@ -50,6 +50,34 @@
             display: inline;
             animation: none;
             border-right: none;
+        }
+	.intro-box {
+            display: inline-block;
+            border: 2px solid #000;
+            padding: 20px;
+            text-align: left;
+            margin: 20px auto;
+            text-align: left;
+            width: 70%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            color: white;
+        }
+        .intro-box h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .intro-box p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+        .intro-box a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .intro-box a:hover {
+            text-decoration: underline;
         }
 
         @keyframes typing {
@@ -175,23 +203,26 @@
             background-color: #555;
         }
 
-        .about-content {
+          .about-content {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: left;
+            flex-wrap: wrap;
         }
 
         .about-text {
             flex: 1;
+            min-width: 300px;
         }
 
         .about-photo {
             flex: 1;
             text-align: right;
+            min-width: 300px;
         }
 
         .about-photo img {
-            max-width: 300px;
+            max-width: 100%;
             border-radius: 50%;
         }
 
@@ -227,12 +258,16 @@
     <section id="about">
         <h2>About</h2>
         <div class="about-content">
-            <div class="about-text">
-                <p>This section is about Anjali Gupta.</p>
-                <p>I have a lot of achievements.</p>
-            </div>
+            <div class="intro-box">
+		
+        <p>Hello, I’m <strong>Anjali Gupta</strong>, a passionate and motivated software developer based in <strong>Madison, WI.<br></strong> With a strong foundation in computer science and a diverse skill set in <strong>C++, Python, Java, and<br> JavaScript</strong>, I thrive on building innovative solutions and tackling complex problems.</p>
+        <p>Throughout<br> my academic journey at the <strong>University of Wisconsin-Whitewater</strong> and my professional <br>experiences, I’ve developed a knack for creating efficient, scalable, and user-friendly applications.<br> </p>
+        <p>In addition to my technical expertise, I bring strong analytical and problem-solving skills, honed <br>through personalized tutoring sessions and collaborative projects. My experience working in team <br>environments has equipped me with effective communication and teamwork abilities, essential <br>for any dynamic tech company.
+        I am currently seeking a <strong>Software Engineering Intern </strong>role,<br> where I can leverage my skills and contribute to groundbreaking projects. Explore my portfolio to <br>see the projects I've worked on and learn more about my journey as a software developer.</p>
+        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/anjali77" target="_blank">LinkedIn</a> or check out my <a href="https://github.com/Anjali0777" target="_blank">GitHub</a> for more detailed insights into my work.</p>
+    </div>
             <div class="about-photo">
-                <img src="path/to/photo.jpg" alt="Anjali Gupta">
+                <img src="C:\Users\agupta\Downloads\IMG_1326.jpg" alt="Anjali Gupta">
             </div>
         </div>
         
@@ -243,31 +278,31 @@
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front">
-                        <h3>Project 1</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>Details about Project 1...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
                         <h3>Minesweeper Game</h3>
-			<h4> (C++)</h4>
                     </div>
                     <div class="card-back">
-                        <p>Details about Project 2...</p>
+                        <p>This game is made using C++ with <br>features like flagging.</p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-inner">
                     <div class="card-front">
-                        <h3>Project 3</h3>
+                        <h3>Photo Editor</h3>
+			
                     </div>
                     <div class="card-back">
-                        <p>Details about Project 3...</p>
+                        <p>Made using Python framework PIL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Made using Html, CSS<br>and JavaScript.</p>
                     </div>
                 </div>
             </div>
@@ -281,7 +316,7 @@
             <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <p><a href="file:///C:/Users/agupta/Desktop/Anjali%20resume.pdf" download>Download My Resume</a></p>
+        <p><a href="file:///C:/Users/agupta/Desktop/Anjali%20resume.pdf" download>View My Resume</a></p>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/anjali77" target="_blank">LinkedIn</a>
             <a href="mailto:anjalimg77@gmail.com" target="_blank">Email</a>
@@ -376,4 +411,3 @@
     </script>
 </body>
 </html>
-
